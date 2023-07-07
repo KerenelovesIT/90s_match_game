@@ -3,8 +3,8 @@ const boardContainer = document.querySelector('.board-container')
 let cards = [
     {name: 'A1' , img: 'images/Ginger.png' },
     {name: 'A1' , img: 'images/Ginger1.png' },
-    {name: 'A2' , img: 'images/A2.png'},
-    {name: 'A2' , img: 'images/a2.2.png'},
+    {name: 'A2' , img: 'images/Rugrats.png'},
+    {name: 'A2' , img: 'images/Rugrats1.png'},
     {name: 'A3' , img: 'images/A3.png' },
     {name: 'A3' , img: 'images/A3.3.png'},
     {name: 'A4' , img: 'images/A4.png'},
