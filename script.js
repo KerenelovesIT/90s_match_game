@@ -1,31 +1,31 @@
 
-const boadContainer = document.querySelected('.board-container')
+const boadContainer = document.querySelector('.board-container')
 
 let cards = [
-    {name: A1 , img: }
-    {name: A1 , img: }
-    {name: A2 , img: }
-    {name: A2 , img: }
-    {name: A3 , img: }
-    {name: A3 , img: }
-    {name: A4 , img: }
-    {name: A4 , img: }
-    {name: A5 , img: }
-    {name: A5 , img: }
-    {name: A6 , img: }
-    {name: A6 , img: }
-    {name: A7 , img: }
-    {name: A7 , img: }
-    {name: A8 , img: }
-    {name: A8 , img: }
-    {name: A9 , img: }
-    {name: A9 , img: }
-    {name: A10 , img: }
-    {name: A10 , img: }
-    {name: A11 , img: }
-    {name: A11 , img: }
-    {name: A12 , img: }
-    {name: A12 , img: }
+    {name: A1 , img: A1.png }
+    {name: A1 , img: a1.1.png }
+    {name: A2 , img: A2.png}
+    {name: A2 , img: a2.2.png}
+    {name: A3 , img: A3.png }
+    {name: A3 , img: A3.3.png}
+    {name: A4 , img: A4.png}
+    {name: A4 , img: a4.4.png}
+    {name: A5 , img: A5.png}
+    {name: A5 , img: A5.5.png}
+    {name: A6 , img: A6.png}
+    {name: A6 , img: a6.6.png}
+    {name: A7 , img: A7.png}
+    {name: A7 , img: A7.7.png}
+    {name: A8 , img: A8.png}
+    {name: A8 , img: A8.8.png}
+    {name: A9 , img: A9.png}
+    {name: A9 , img: A9.9.png}
+    {name: A10 , img: A10.png}
+    {name: A10 , img: a10.10png}
+    {name: A11 , img: A11.png}
+    {name: A11 , img: a11.11.png}
+    {name: A12 , img: A12.png}
+    {name: A12 , img: a12.12.png}
 ]
 
 //declare cards
@@ -42,7 +42,7 @@ const generateCards = () => {
         cardElement.setAttribute('data-name', card.name)
         cardElement.innerHTML = `
         <div class="front">
-            <img class="font-image src="${card.img}" />
+            <img class="front-image src="${card.img}" />
         </div>
         <div class="back"></div>
         `
@@ -87,12 +87,15 @@ function flipCard() {
 }
 
 function unflipCards() {
-    setTimeout(() {
-        firstCard.classList.remove('flipped')
-        secondCard.classList.remove('flipped')
-        resetBoard()
-    }, 1000)
+    ssetTimeout(() => {
+        firstCard.classList.remove('flipped');
+        secondCard.classList.remove('flipped');
+        resetBoard();
+    }, 1000);
 }
+
+
+
 
 function checkForMatch (){
     let isMatch = firstCard.dataset.name === secondCard.dataset.name
