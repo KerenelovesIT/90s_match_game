@@ -31,10 +31,13 @@ body {
   .container {
     display: flex;
     align-items: center;
+    justify-content: center;
+
   }
   
   .image {
     flex: 1;
+    text-align: center;
   }
   
   .text {
@@ -52,4 +55,23 @@ body {
   border-radius: 10px;
   background-color: rgb(228, 178, 185);
   color: palevioletred;
+}
+
+/* frontpage.css */
+
+.text-section {
+  float: left;
+  width: 50%;
+  padding: 20px;
+}
+
+.image-section {
+  float: right;
+  width: 50%;
+  text-align: center;
+}
+
+.image-section img {
+  max-width: 100%;
+  height: auto;
 }

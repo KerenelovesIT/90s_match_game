@@ -32,8 +32,23 @@ let firstCard, secondCard
 let lockBoard = false
 let score = 0
 document.querySelector('.score').textContent = score
+
+const shuffleCards = () => {
+  let currentIndex = cards.length,
+    randomIndex,
+    temporaryValue
+  while (currentIndex !== 0) {
+    randomIndex = Math.floor(Math.random() * currentIndex)
+    currentIndex -= 1
+    temporaryValue = cards[currentIndex]
+    cards[currentIndex] = cards[randomIndex]
+    cards[randomIndex] = temporaryValue
+  }
+}
+
 //Must be able to generate cards//
 const generateCards = () => {
+  shuffleCards()
   for (card of cards) {
     const cardElement = document.createElement('div')
     cardElement.classList.add('card')
@@ -50,18 +65,7 @@ const generateCards = () => {
 }
 generateCards()
 //get cards to shuffle around to make sure card position unpredictacble//
-const shuffleCards = () => {
-  let currentIndex = cards.length,
-    randomIndex,
-    temporaryValue
-  while (currentIndex !== 0) {
-    randomIndex = Math.floor(Math.random() * currentIndex)
-    currentIndex -= 1
-    temporaryValue = cards[currentIndex]
-    cards[currentIndex] = cards[randomIndex]
-    cards[randomIndex] = temporaryValue
-  }
-}
+
 //Functions get cards to do everything//
 //create flip card function//
 //easier when I seperated cards//
@@ -74,8 +78,7 @@ function flipCard() {
     return
   }
   secondCard = this
-  score++
-  document.querySelector('.score').textContent = score
+
   lockBoard = true
   checkForMatch()
 }
@@ -90,7 +93,13 @@ function unflipCards() {
 // Check if card match//
 function checkForMatch() {
   let isMatch = firstCard.dataset.name === secondCard.dataset.name
-  isMatch ? disableCards() : unflipCards()
+ 
+  if (isMatch) {
+    score++
+    document.querySelector('.score').textContent = score
+    disableCards()
+  } else {unflipCards()}
+  
 }
 // add event listeners//
 function disableCards() {

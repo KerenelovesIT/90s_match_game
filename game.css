@@ -70,6 +70,7 @@ body {
   .card .back{
     background-image: url('images/backofcard.jpg');
     background-size: cover;
+  }
 
   .card .front {
     transform: rotateY(180deg);
