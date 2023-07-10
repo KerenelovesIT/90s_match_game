@@ -1,7 +1,14 @@
 body {
-    font-family: Times, serif;
+    font-family: Verdana, Geneva, sans-serif;
     margin: 0;
     padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-image: url("images/background.png");
+    background-size: cover;
+    background-repeat: no-repeat;
      
   }
   
@@ -11,14 +18,27 @@ body {
   }
   
   main {
-    border: 30px solid green;
+    border: 30px solid rgb(225, 109, 185);
     padding: 20px;
+    background-color: white;
   }
   
   h1, h2 {
     font-weight: bold;
   }
+
+  h1 {
+    margin-bottom: 0;
+
+  }
   
+  h2 {
+    font-family: ;
+    font-style: italic;
+    margin-top: 0;
+
+  }
+
   section {
     margin-bottom: 20px;
   }
@@ -26,9 +46,20 @@ body {
   .container {
     display: flex;
     align-items: center;
+    justify-content: flex-end;
   }
 
-.actions{
+  .image {
+    flex: 1;
+    margin-right: 20px;
+  }
+
+  .image img {
+    width: 700px; /* Adjust the width as needed */
+    height: auto; /* Maintain aspect ratio */
+  }
+
+.actions {
     display: flex;
     justify-content: center; /* Add this line to horizontally center the button */
     margin-top: 20px;
@@ -37,7 +68,7 @@ body {
 .actions button {
   padding: 8px 16px;
   font-size: 30px;
-  border-radius: 10px;
-  background-color: rgb(2, 95, 2);
+  border-radius: 5px;
+  background-color: rgb(225, 109, 185);
   color: rgb(255, 255, 255);
 }
