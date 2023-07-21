@@ -19,12 +19,12 @@ let cards = [
     {id:16, name: 'A8' , img: 'images/A8.8.png'} ,
     {id:17, name: 'A9' , img: 'images/A9.png'} ,
     {id:18, name: 'A9' , img: 'images/A9.9.png'},
-    {id:19, name: 'A10' , img: 'images/A10.png'},
+   /* {id:19, name: 'A10' , img: 'images/A10.png'},
     {id:20, name: 'A10' , img: 'images/a10.10.png'},
     {id:21, name: 'A11' , img: 'images/A11.png'},
     {id:22, name: 'A11' , img: 'images/a11.11.png'},
     {id:23, name: 'A12' , img: 'images/A12.png'},
-    {id:24, name: 'A12' , img: 'images/a12.12.png'}
+    {id:24, name: 'A12' , img: 'images/a12.12.png'} */
 ]
 
 

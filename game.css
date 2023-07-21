@@ -9,7 +9,7 @@ body {
   background-image: url("images/card\ game\ background.png");
   background-size: cover;
   background-repeat: no-repeat;
-  color: rgb(242, 8, 168);
+  color: rgb(255, 255, 255);
     }
 
 h1 {
@@ -20,9 +20,11 @@ h1 {
   }
 
 p {
-  text-align: center;
-  font-size: 30px;
+  text-align: left;
+  font-size: 50px;
   font-weight: bold;
+  margin-bottom: 0px;
+  margin-top: 0px;
   }
         
 .actions {
@@ -87,5 +89,3 @@ p {
   background-image: url('images/backofcard.jpg');
   background-size: cover;
   }
-
-  
