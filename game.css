@@ -42,13 +42,13 @@ p {
   display: grid;
   justify-content: center;
   grid-gap: 20px;
-  grid-template-columns: repeat(6, 140px);
-  grid-template-rows: repeat(2, calc(140px / 2 * 3));
+  grid-template-columns: repeat(6, 200px);
+  grid-template-rows: repeat(2, calc(200px / 2 * 3));
   }
 
 .card {
-  height: calc(140px / 2 * 3);
-  width: 140px;
+  height: calc(200px / 2 * 3);
+  width: 200px;
   border-radius: 10px;
   background-color: rgb(255, 196, 3);
   position: relative;
