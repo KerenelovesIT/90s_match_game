@@ -9,11 +9,20 @@
   <script src="script.js" defer></script>
  </head>
   <body>
-    <h1>90s Cartoon Memory Game</h1> 
+    <header>
+      <div class="topnav">
+        <a class="active" href="#home">Home</a>
+        <a href="#news">Contact</a>
+        <a href="#contact">Help</a>
+        <a href="#about">How To Play</a>
+        <a href="#something">Genre</a>
+      </div>
+    </header>
+    <h1 class="heading-background">90s Cartoon Memory Game</h1> 
     <div class="board-container"></div>
-    <p> Score: <span class="score"></span></p>
+    
     <div class="actions">
-        <button onclick="restart()">Restart</button> 
+      <button onclick="restart()">Restart</button> <p class="scores"> Score: <span class="score"></span></p>
     </div>
   </body>
 </html>
